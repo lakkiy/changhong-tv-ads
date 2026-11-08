@@ -1,0 +1,16 @@
+# 长虹电视开屏广告域名（mihomo rule-provider，behavior: classical）
+# 2026-11 抓包得到
+payload:
+  # 欢网：询问下一次放什么广告
+  - DOMAIN,qapi-moss.huan.tv
+  # 欢网：广告曝光上报
+  - DOMAIN,monitor-moss.huan.tv
+  - DOMAIN,monitor-ads.huan.tv
+  - DOMAIN,ads.huan.tv
+  # 长虹广告平台：下发广告配置
+  - DOMAIN-SUFFIX,adx-ad.smart-tv.cn
+  # 数据统计（和广告请求一起出现）
+  - DOMAIN,analysis.shixunsuda.com
+  - DOMAIN,collection.shixunsuda.com
+  # 每 10 秒左右上报一次的广告监测（非正式域名）
+  - DOMAIN,monitor.ads

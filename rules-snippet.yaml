@@ -1,0 +1,12 @@
+# 直接粘到 mihomo 配置 rules: 的最前面
+# （需排在国内直连类规则集之前，否则会被直连放行）
+rules:
+  # 长虹电视开屏广告
+  - DOMAIN, qapi-moss.huan.tv, REJECT
+  - DOMAIN, monitor-moss.huan.tv, REJECT
+  - DOMAIN, monitor-ads.huan.tv, REJECT
+  - DOMAIN, ads.huan.tv, REJECT
+  - DOMAIN-SUFFIX, adx-ad.smart-tv.cn, REJECT
+  - DOMAIN, analysis.shixunsuda.com, REJECT
+  - DOMAIN, collection.shixunsuda.com, REJECT
+  - DOMAIN, monitor.ads, REJECT
